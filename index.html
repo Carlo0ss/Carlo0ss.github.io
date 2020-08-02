@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Shroomy Clicker</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="icon" type="image/png" href="images/shroom2.png" />
+	</head>
+
+	<body>
+		
+		<div id="titre">
+			<p>Shroomy Clicker</p>
+			<input type="button" id="reset" value="RESET TOTAL"></input>
+		</div>
+		
+		<div id="jeu">
+			<div id="clicker">
+				<div id="nbShroom">
+					<p>Shrooms</p>
+				</div>
+				<input type="text" id="affichage"  disabled="disabled" value=""></input></br>
+				<input type="button" id="shroom" ></input>
+			</div>
+
+
+
+
+
+			<div id="achats">
+				<div id="teemo">
+					<input type="button" class="bouton" id="teemoB"></input>
+					<div id="infoTeemo">
+						<input type="text" id="nbTeemo"  disabled="disabled" ></input>
+						<input type="text" id="prixTeemo"  disabled="disabled" value="prix: 100 shrooms"></input>
+						<input type="text" id="effTeemo"  disabled="disabled" value="0.1 shroom/s"></input>
+					</div>
+				</div>
+				<div id="velkoz">
+					<input type="button" class="bouton" id="velkozB"></input>
+					<div id="infoVelkoz">
+						<input type="text" id="nbVelkoz"  disabled="disabled" ></input>
+						<input type="text" id="prixVelkoz"  disabled="disabled" value="prix: 2800 shrooms"></input>
+						<input type="text" id="effVelkoz"  disabled="disabled" value="3.14 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="ivern">
+					<input type="button" class="bouton" id="ivernB"></input>
+					<div id="infoIvern">
+						<input type="text" id="nbIvern" disabled="disabled" ></input>
+						<input type="text" id="prixIvern"  disabled="disabled" value="prix: 8 000 shrooms"></input>
+						<input type="text" id="effIvern"  disabled="disabled" value="10 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="nidalee">
+					<input type="button" class="bouton" id="nidaleeB"></input>
+					<div id="infoNidalee">
+						<input type="text" id="nbNidalee"  disabled="disabled" ></input>
+						<input type="text" id="prixNidalee"  disabled="disabled" value="prix: 20 000 shrooms"></input>
+						<input type="text" id="effNidalee"  disabled="disabled" value="27 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="thresh">
+					<input type="button" class="bouton" id="threshB"></input>
+					<div id="infoThresh">
+						<input type="text" id="nbThresh"  disabled="disabled" ></input>
+						<input type="text" id="prixThresh"  disabled="disabled" value="prix: 40 000 shrooms"></input>
+						<input type="text" id="effThresh"  disabled="disabled" value="58 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="maokai">
+					<input type="button" class="bouton" id="maokaiB"></input>
+					<div id="infoMaokai">
+						<input type="text" id="nbMaokai"  disabled="disabled" ></input>
+						<input type="text" id="prixMaokai"  disabled="disabled" value="prix: 82 000 shrooms"></input>
+						<input type="text" id="effMaokai"  disabled="disabled" value="120 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="aphelios">
+					<input type="button" class="bouton" id="apheliosB"></input>
+					<div id="infoAphelios">
+						<input type="text" id="nbAphelios"  disabled="disabled" ></input>
+						<input type="text" id="prixAphelios"  disabled="disabled" value="prix: 150 000 shrooms"></input>
+						<input type="text" id="effAphelios"  disabled="disabled" value="200 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="viktor">
+					<input type="button" class="bouton" id="viktorB"></input>
+					<div id="infoViktor">
+						<input type="text" id="nbViktor"  disabled="disabled" ></input>
+						<input type="text" id="prixViktor"  disabled="disabled" value="prix: 310 000 shrooms"></input>
+						<input type="text" id="effViktor"  disabled="disabled" value="385 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="senna">
+					<input type="button" class="bouton" id="sennaB"></input>
+					<div id="infoSenna">
+						<input type="text" id="nbSenna"  disabled="disabled" ></input>
+						<input type="text" id="prixSenna"  disabled="disabled" value="prix: 1 950 000 shrooms"></input>
+						<input type="text" id="effSenna"  disabled="disabled" value="3 000 shrooms/s"></input>
+					</div>
+				</div>
+				<div id="jhin">
+					<input type="button" class="bouton" id="jhinB"></input>
+					<div id="infoJhin">
+						<input type="text" id="nbJhin"  disabled="disabled" ></input>
+						<input type="text" id="prixJhin"  disabled="disabled" value="prix: 2 700 000 shrooms"></input>
+						<input type="text" id="effJhin"  disabled="disabled" value="4 444 shrooms/s"></input>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div id="objets">
+				<div id="stats">
+					<input type="text" id="parSec"  disabled="disabled" value=""></input></br>
+					<input type="text" id="parClic"  disabled="disabled" value=""></input></br>
+				</div>
+				<div id="boutique">
+					<div id="Cull">
+						<input type="button" id="CullB" disabled="false"></input>
+						<div id="infoCull">
+							<input type="text" id="nomCull"  disabled="disabled" value="Cull"></input>
+							<input type="text" id="prixCull"  disabled="disabled" value="prix: 500 shrooms"></input>
+							
+								<input type="text" id="effCull"  disabled="disabled" value="effet: +1500 Shrooms quand stackée"></input>
+							
+						</div>
+						<div id="etatCull">
+							<input type="text" id="achatCull"  disabled="disabled" value=""></input>
+							<input type="text" id="stackCull"  disabled="disabled" value=""></input>
+						</div>
+					</div>
+
+					<div id="Pink">
+						<input type="button" id="PinkB" disabled="false"></input>
+						<div id="infoPink">
+							<input type="text" id="nomPink"  disabled="disabled" value="Control Ward"></input>
+							<input type="text" id="prixPink"  disabled="disabled" value="prix: 750 shrooms"></input>
+							<input type="text" id="effPink"  disabled="disabled" value="effet: +0.75 Shrooms/click"></input>
+							
+						</div>
+						<input type="text" id="achatPink"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Oracle">
+						<input type="button" id="OracleB" disabled="false"></input>
+						<div id="infoOracle">
+							<input type="text" id="nomOracle"  disabled="disabled" value="Extrait d'oracle"></input>
+							<input type="text" id="prixOracle"  disabled="disabled" value="prix: 1500 shrooms"></input>
+							<input type="text" id="effOracle"  disabled="disabled" value="effet: +2 Shrooms/click"></input>
+							
+						</div>
+						<input type="text" id="achatOracle"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Dague">
+						<input type="button" id="DagueB" ></input>
+						<div id="infoDague">
+							<input type="text" id="nomDague"  disabled="disabled" value="Dague"></input>
+							<input type="text" id="prixDague"  disabled="disabled" value="prix: 3000 shrooms"></input>
+							<input type="text" id="effDague"  disabled="disabled" value="effet: +0.5 Shr/Cl et peut se transformer..."></input>
+							
+						</div>
+						<input type="text" id="achatDague"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Runaan">
+						<input type="button" id="RunaanB" disabled="true"></input>
+						<div id="infoRunaan">
+							<input type="text" id="nomRunaan"  disabled="disabled" value="Ouragan de Runaan"></input>
+							<input type="text" id="prixRunaan"  disabled="disabled" value="prix: 3 Dagues"></input>
+							<input type="text" id="effRunaan"  disabled="disabled" value="effet: +3 Shr/Cl et +15% Shr/S"></input>
+							
+						</div>
+						<input type="text" id="achatRunaan"  disabled="disabled" value="1/1"></input>
+					</div>
+					<div id="Guinsoo">
+						<input type="button" id="GuinsooB" disabled="false"></input>
+						<div id="infoGuinsoo">
+							<input type="text" id="nomGuinsoo"  disabled="disabled" value="Guinsoo"></input>
+							<input type="text" id="prixGuinsoo"  disabled="disabled" value="prix: 30 000 shrooms"></input>
+							<input type="text" id="effGuinsoo"  disabled="disabled" value="effet: Rajoute un effet de combo sur vos clicks"></input>
+							
+						</div>
+						<input type="text" id="achatGuinsoo"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Lanterne">
+						<input type="button" id="LanterneB" disabled="false"></input>
+						<div id="infoLanterne">
+							<input type="text" id="nomLanterne"  disabled="disabled" value="Lanterne de Thresh"></input>
+							<input type="text" id="prixLanterne"  disabled="disabled" value="prix: 50 thresh"></input>
+							<input type="text" id="effLanterne"  disabled="disabled" value="effet: Libère les âmes..."></input>
+						</div>
+						<input type="text" id="achatLanterne"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Arbrisseau">
+						<input type="button" id="ArbrisseauB" disabled="false"></input>
+						<div id="infoArbrisseau">
+							<input type="text" id="nomArbrisseau"  disabled="disabled" value="Arbrisseau de Maokai"></input>
+							<input type="text" id="prixArbrisseau"  disabled="disabled" value="prix: 5 Maokai"></input>
+							<input type="text" id="effArbrisseau"  disabled="disabled" value="effet: Améliore la puissance de Maokai"></input>
+						</div>
+						<input type="text" id="achatArbrisseau"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Calibrum">
+						<input type="button" id="CalibrumB" disabled="false"></input>
+						<div id="infoCalibrum">
+							<input type="text" id="nomCalibrum"  disabled="disabled" value="Calibrum"></input>
+							<input type="text" id="prixCalibrum"  disabled="disabled" value="prix: 75 000 shrooms"></input>
+							<input type="text" id="effCalibrum"  disabled="disabled" value="effet: +3% Shrooms/click"></input>
+						</div>
+						<input type="text" id="achatCalibrum"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Severum">
+						<input type="button" id="SeverumB" disabled="false"></input>
+						<div id="infoSeverum">
+							<input type="text" id="nomSeverum"  disabled="disabled" value="Severum"></input>
+							<input type="text" id="prixSeverum"  disabled="disabled" value="prix: 75 000 shrooms"></input>
+							<input type="text" id="effSeverum"  disabled="disabled" value="effet: +3% Shrooms/click"></input>
+						</div>
+						<input type="text" id="achatSeverum"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Gravitum">
+						<input type="button" id="GravitumB" disabled="false"></input>
+						<div id="infoGravitum">
+							<input type="text" id="nomGravitum"  disabled="disabled" value="Gravitum"></input>
+							<input type="text" id="prixGravitum"  disabled="disabled" value="prix: 75 000 shrooms"></input>
+							<input type="text" id="effGravitum"  disabled="disabled" value="effet: +3% Shrooms/click"></input>
+						</div>
+						<input type="text" id="achatGravitum"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Infernum">
+						<input type="button" id="InfernumB" disabled="false"></input>
+						<div id="infoInfernum">
+							<input type="text" id="nomInfernum"  disabled="disabled" value="Infernum"></input>
+							<input type="text" id="prixInfernum"  disabled="disabled" value="prix: 75 000 shrooms"></input>
+							<input type="text" id="effInfernum"  disabled="disabled" value="effet: +3% Shrooms/click"></input>
+						</div>
+						<input type="text" id="achatInfernum"  disabled="disabled" value=""></input>
+					</div>
+					<div id="Crescendum">
+						<input type="button" id="CrescendumB" disabled="false"></input>
+						<div id="infoCrescendum">
+							<input type="text" id="nomCrescendum"  disabled="disabled" value="Crescendum"></input>
+							<input type="text" id="prixCrescendum"  disabled="disabled" value="prix: 75 000 shrooms"></input>
+							<input type="text" id="effCrescendum"  disabled="disabled" value="effet: +3% Shrooms/click"></input>
+						</div>
+						<input type="text" id="achatCrescendum"  disabled="disabled" value=""></input>
+					</div>
+					<div id="HexCore">
+						<input type="button" id="HexCoreB" disabled="false"></input>
+						<div id="infoHexCore">
+							<input type="text" id="nomHexCore"  disabled="disabled" value="HexCore"></input>
+							<input type="text" id="prixHexCore"  disabled="disabled" value="prix: gratuit"></input>
+							<input type="text" id="effHexCore"  disabled="disabled" value="effet: Viktor obtient des améliorations"></input>
+						</div>
+						<input type="text" id="achatHexCore"  disabled="disabled" value=""></input>
+					</div>
+
+					<div id="Tear">
+						<input type="button" id="TearB" disabled="false"></input>
+						<div id="infoTear">
+							<input type="text" id="nomTear"  disabled="disabled" value="Larme de la déesse"></input>
+							<input type="text" id="prixTear"  disabled="disabled" value="prix: 2 500 000"></input>
+							<input type="text" id="effTear"  disabled="disabled" value="effet: S'améliore quand stackée"></input>
+						</div>
+						<div id="etatTear">
+							<input type="text" id="achatTear"  disabled="disabled" value=""></input>
+							<input type="text" id="stackTear"  disabled="disabled" value=""></input>
+						</div>
+					</div>
+					<div id="Manamune">
+						<input type="button" id="ManamuneB" disabled="true"></input>
+						<div id="infoManamune">
+							<input type="text" id="nomManamune"  disabled="disabled" value="Manamune"></input>
+							<input type="text" id="prixManamune"  disabled="disabled" value="bonus: 5 Shr/click"></input>
+							<input type="text" id="effManamune"  disabled="disabled" value="effet: S'améliore quand stackée"></input>
+						</div>
+						<div id="etatManamune">
+							<input type="text" id="achatManamune"  disabled="disabled" value="1/1"></input>
+							<input type="text" id="stackManamune"  disabled="disabled" value=""></input>
+						</div>
+					</div>
+					<div id="Muramana">
+						<input type="button" id="MuramanaB" disabled="true"></input>
+						<div id="infoMuramana">
+							<input type="text" id="nomMuramana"  disabled="disabled" value="Muramana"></input>
+							<input type="text" id="effMuramana"  disabled="disabled" value="effet: 5 shr/cl et augmente les shr/cl"></input>
+							<input type="text" id="effMuramana"  disabled="disabled" value="en fonction des shrooms actuels"></input>
+						</div>
+						<input type="text" id="achatMuramana"  disabled="disabled" value="1/1"></input>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		 
+	</body>
+</html>

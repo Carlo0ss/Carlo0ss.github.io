@@ -1,0 +1,2110 @@
+body{
+	
+	background-image: url("images/fond2.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size :  cover;
+	
+}
+
+#titre{
+	width:1450px;
+	height:15%;
+	padding-top:7px;
+	align-items : center;
+	justify-content :space-around;
+ 	text-transform : uppercase;
+ 	margin-left :400px;
+ 	display: flex;
+	flex-direction: row;
+
+ }
+
+#titre p{
+	text-align: center;
+	font-weight: 900;
+	color :#8200a8;
+  	font : 350% impact, futura, sans-serif;
+  	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+  	width:100%;
+  	
+}
+
+
+#reset{
+	width:150px;
+	height:50px;
+	margin-left:40px;
+	border:3px solid black;
+	color : #8200a8;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	background-color:#8200a8;
+}
+#shroom{
+	width:606px;
+	height:615px;
+	margin-left:100px;
+	margin-top : 10px;
+	background:none;
+	background-image:url("images/shroom2.png");
+	background-position: center;
+	background-size:cover;
+	border:none;
+}
+
+#affichage{
+	width :350px;
+	height: 50px;
+	margin-left:200px;
+	font-size : 20px;
+	font-weight: 900;
+	background : none;
+	border : 3px solid black;
+	border-top : none;
+	text-align : center;
+	color : black;
+}
+
+
+
+#nbShroom{
+	margin-top : 20px;
+	width :352px;
+	height: 60px;
+	margin-left:200px;
+	font-weight: 900;
+	font-size : 20px;
+	border : 3px solid black;
+	text-align : center;
+	border-bottom : none;
+	text-transform : uppercase;
+	color : #8200a8;;
+	font : 150% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+}
+
+#jeu{
+	width : 1875px;
+	display: flex;
+	flex-direction: row;
+}
+
+#achats{
+	margin-top : 20px;
+	margin-left:10px;
+	width : 600px;
+	height : 735px;
+	overflow-x: hidden;
+	overflow-y:scroll;
+	border : 3px solid black;
+}
+
+#objets{
+	margin-top : 20px;
+	margin-left:10px;
+	width : 550px;
+	height : 735px;
+	border : 3px solid black;
+	overflow-x: hidden;
+	overflow-y:scroll;
+}
+
+#stats{
+	border-bottom: 3px solid black;
+}
+#parSec{
+	border:none;
+	background : none;
+	width:100%;
+	height:20%;
+	text-transform : uppercase;
+	color : #8200a8;
+	font : 35px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#parClic{
+	border:none;
+	background : none;
+	width:100%;
+	height:20%;
+	text-transform : uppercase;
+	color : #8200a8;
+	font : 35px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE TEEMO*/
+/******************************/
+
+#teemo{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#teemoB{
+	width:500px;
+	height:150px;
+	background-image:url("images/teemo.jpg");
+	background-size:75%;
+	border-bottom:3px solid black;
+
+}
+
+#infoTeemo{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbTeemo{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #8200a8;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixTeemo{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #8200a8;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effTeemo{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #8200a8;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE Vel'koz*/
+/******************************/
+
+#velkoz{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+}
+
+#velkozB{
+	width:850px;
+	height:150px;
+	background-image:url("images/velkoz.jpg");
+	background-size: cover;
+	background-position: right;
+}
+
+#infoVelkoz{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbVelkoz{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #ffb900;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixVelkoz{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #ffb900;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effVelkoz{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #ffb900;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE IVERN*/
+/******************************/
+
+#ivern{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#ivernB{
+	width:850px;
+	height:150px;
+	background-image:url("images/ivern.jpg");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoIvern{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbIvern{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #3cda00;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixIvern{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #3cda00;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effIvern{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #3cda00;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE NIDALEE*/
+/******************************/
+
+#nidalee{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#nidaleeB{
+	width:850px;
+	height:150px;
+	background-image:url("images/nidalee.jpg");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoNidalee{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbNidalee{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #69240e;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixNidalee{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #69240e;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effNidalee{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #69240e;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE THRESH*/
+/******************************/
+
+#thresh{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#threshB{
+	width:850px;
+	height:150px;
+	background-image:url("images/thresh.png");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoThresh{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbThresh{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #1bde82;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixThresh{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #1bde82;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effThresh{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #1bde82;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE SENNA*/
+/******************************/
+
+#senna{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#sennaB{
+	width:850px;
+	height:150px;
+	background-image:url("images/senna.jpg");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoSenna{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbSenna{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #EEEEEE;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixSenna{
+	background : none;
+	width:190px;
+	height:100%;
+	text-transform : uppercase;
+	color : #EEEEEE;
+	font : 96% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effSenna{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #EEEEEE;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE MAOKAI*/
+/******************************/
+
+#maokai{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#maokaiB{
+	width:850px;
+	height:150px;
+	background-image:url("images/maokai.jpg");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoMaokai{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbMaokai{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : green;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixMaokai{
+	background : none;
+	width:190px;
+	height:100%;
+	text-transform : uppercase;
+	color : green;
+	font : 96% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effMaokai{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : green;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE aphelios*/
+/******************************/
+
+#aphelios{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#apheliosB{
+	width:850px;
+	height:150px;
+	background-image:url("images/aphelios.jpg");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoAphelios{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbAphelios{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #87cefa ;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixAphelios{
+	background : none;
+	width:185px;
+	height:100%;
+	text-transform : uppercase;
+	color : #87cefa ;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effAphelios{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color :#87cefa;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE viktor*/
+/******************************/
+
+#viktor{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#viktorB{
+	width:850px;
+	height:150px;
+	background-image:url("images/viktor.jpg");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoViktor{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbViktor{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #dc143c ;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixViktor{
+	background : none;
+	width:185px;
+	height:100%;
+	text-transform : uppercase;
+	color : #dc143c ;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effViktor{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color :#dc143c;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE jhin*/
+/******************************/
+
+#jhin{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#jhinB{
+	width:850px;
+	height:150px;
+	background-image:url("images/jhin.jpg");
+	background-size:100%;
+	text-align:left top;
+}
+
+#infoJhin{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbJhin{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #c71585 ;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixJhin{
+	background : none;
+	width:185px;
+	height:100%;
+	text-transform : uppercase;
+	color : #c71585 ;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effJhin{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #c71585 ;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE les items*/
+/******************************/
+
+/******************************/
+/*TOUT CE QUI CONCERNE la cull*/
+/******************************/
+
+#Cull{
+	width:695px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+
+}
+
+#CullB{
+	background-image:url("images/cull.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+
+
+#infoCull{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+	width:337px;
+}
+
+#nomCull{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #193f53;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixCull{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #193f53;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effCull{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #193f53;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+#etatCull{
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+
+#achatCull{
+	background : none;
+	width:50px;
+	margin-left:30px;
+	margin-top:20px;
+	text-transform : uppercase;
+	color : #193f53;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : left;
+	border:none;
+	margin-bottom:10px;
+}
+
+#stackCull{
+	background : none;
+	width:100px;
+	text-transform : uppercase;
+	color : #193f53;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE la pink*/
+/******************************/
+
+#Pink{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+
+}
+
+#PinkB{
+	background-image:url("images/pink.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+
+
+#infoPink{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomPink{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #a50000;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixPink{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #a50000;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effPink{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #a50000;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatPink{
+	background : none;
+	width:50px;
+	margin-left:30px;
+	text-transform : uppercase;
+	color : #a50000;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE l'oracle'*/
+/******************************/
+
+#Oracle{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#OracleB{
+	background-image:url("images/oracle.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+#infoOracle{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomOracle{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:60px;
+	color : #fd60e1;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixOracle{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #fd60e1;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effOracle{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:40px;
+	color : #fd60e1;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatOracle{
+	background : none;
+	width:50px;
+	margin-left:30px;
+	text-transform : uppercase;
+	color : #fd60e1;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE la dague*/
+/******************************/
+
+#Dague{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#DagueB{
+	background-image:url("images/dague.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+#infoDague{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomDague{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:60px;
+	color : #9d9c9c;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixDague{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #9d9c9c;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effDague{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #9d9c9c;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatDague{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #9d9c9c;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE le runaan*/
+/******************************/
+
+#Runaan{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#RunaanB{
+	background-image:url("images/runaan.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+#infoRunaan{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomRunaan{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #dc5f0a;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixRunaan{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #dc5f0a;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effRunaan{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #dc5f0a;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatRunaan{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #dc5f0a;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE la guinsoo*/
+/******************************/
+
+#Guinsoo{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#GuinsooB{
+	background-image:url("images/guinsoo.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+#infoGuinsoo{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomGuinsoo{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #de2901;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #e88c00, 2px 2px 0 #e88c00, 0 2px 0 #e88c00, -2px 2px 0 #e88c00, -2px 0 0 #e88c00, -2px -2px 0 #e88c00, 0 -2px 0 #e88c00, 2px -2px 0 #e88c00;
+	text-align : center;
+	border:none;
+}
+
+#prixGuinsoo{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #de2901;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #e88c00, 2px 2px 0 #e88c00, 0 2px 0 #e88c00, -2px 2px 0 #e88c00, -2px 0 0 #e88c00, -2px -2px 0 #e88c00, 0 -2px 0 #e88c00, 2px -2px 0 #e88c00;
+	text-align : center;
+	border:none;
+}
+
+#effGuinsoo{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #de2901;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #e88c00, 2px 2px 0 #e88c00, 0 2px 0 #e88c00, -2px 2px 0 #e88c00, -2px 0 0 #e88c00, -2px -2px 0 #e88c00, 0 -2px 0 #e88c00, 2px -2px 0 #e88c00;
+	text-align : center;
+	border:none;
+}
+
+#achatGuinsoo{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #de2901;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #e88c00, 2px 2px 0 #e88c00, 0 2px 0 #e88c00, -2px 2px 0 #e88c00, -2px 0 0 #e88c00, -2px -2px 0 #e88c00, 0 -2px 0 #e88c00, 2px -2px 0 #e88c00;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE la lanterne*/
+/******************************/
+
+#Lanterne{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#LanterneB{
+	background-image:url("images/lanterne.PNG");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+#infoLanterne{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomLanterne{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #1bde82;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixLanterne{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #1bde82;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effLanterne{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #1bde82;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatLanterne{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #1bde82;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE l'Arbrisseau*/
+/******************************/
+
+#Arbrisseau{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#ArbrisseauB{
+	background-image:url("images/arbrisseau.PNG");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+#infoArbrisseau{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomArbrisseau{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : green;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixArbrisseau{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : green;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effArbrisseau{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : green;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatArbrisseau{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : green;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE le calibrum*/
+/******************************/
+
+#Calibrum{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#CalibrumB{
+	background:none;
+	border:none;
+	background-image:url("images/calibrum.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoCalibrum{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomCalibrum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #20b2aa;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixCalibrum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #20b2aa;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effCalibrum{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #20b2aa;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatCalibrum{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #20b2aa;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE le severum*/
+/******************************/
+
+#Severum{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#SeverumB{
+	background:none;
+	border:none;
+	background-image:url("images/severum.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoSeverum{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomSeverum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #db7093;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixSeverum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #db7093;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effSeverum{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #db7093;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatSeverum{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #db7093;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE le gravitum*/
+/******************************/
+
+#Gravitum{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#GravitumB{
+	background:none;
+	border:none;
+	background-image:url("images/gravitum.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoGravitum{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomGravitum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #9932cc;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixGravitum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #9932cc;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effGravitum{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #9932cc;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatGravitum{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #9932cc;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE le infernum*/
+/******************************/
+
+#Infernum{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#InfernumB{
+	background:none;
+	border:none;
+	background-image:url("images/infernum.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoInfernum{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomInfernum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #1e90ff;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixInfernum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #1e90ff;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effInfernum{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #1e90ff;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatInfernum{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #1e90ff ;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE le crescendum*/
+/******************************/
+
+#Crescendum{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#CrescendumB{
+	background:none;
+	border:none;
+	background-image:url("images/crescendum.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoCrescendum{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomCrescendum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : white;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixCrescendum{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : white;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effCrescendum{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : white;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatCrescendum{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : white;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE le HexCore*/
+/******************************/
+
+#HexCore{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#HexCoreB{
+	background:none;
+	border:none;
+	background-image:url("images/hexcore1.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoHexCore{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomHexCore{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #ae3ae9;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixHexCore{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #ae3ae9;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effHexCore{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #ae3ae9;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatHexCore{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #ae3ae9;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+/******************************/
+/*TOUT CE QUI CONCERNE la tear*/
+/******************************/
+
+#Tear{
+	width:695px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+
+}
+
+#TearB{
+	background-image:url("images/tear.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+
+
+#infoTear{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+	width:300px;
+}
+
+#nomTear{
+	background : none;
+	width:210px;
+	text-transform : uppercase;
+	margin-left:30px;
+	color : #261ce4;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixTear{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:30px;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effTear{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #261ce4;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+#etatTear{
+	display: flex;
+	flex-direction: column;
+}
+
+#achatTear{
+	background : none;
+	width:50px;
+	margin-left:30px;
+	margin-top:20px;
+	text-transform : uppercase;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : left;
+	border:none;
+	margin-bottom:10px;
+}
+
+#stackTear{
+	background : none;
+	text-transform : uppercase;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	border:none;
+}
+
+
+/******************************/
+/*TOUT CE QUI CONCERNE la Manamune*/
+/******************************/
+
+#Manamune{
+	width:695px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+
+}
+
+#ManamuneB{
+	background-image:url("images/manamune.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+
+
+#infoManamune{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+	width:300px;
+}
+
+#nomManamune{
+	background : none;
+	width:210px;
+	text-transform : uppercase;
+	margin-left:30px;
+	color : #261ce4;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixManamune{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:30px;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effManamune{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #261ce4;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+#etatManamune{
+	display: flex;
+	flex-direction: column;
+}
+
+#achatManamune{
+	background : none;
+	width:50px;
+	margin-left:30px;
+	margin-top:20px;
+	text-transform : uppercase;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : left;
+	border:none;
+	margin-bottom:10px;
+}
+
+#stackManamune{
+	background : none;
+	text-transform : uppercase;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE la Muramana*/
+/******************************/
+
+#Muramana{
+	width:695px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+
+}
+
+#MuramanaB{
+	background-image:url("images/muramana.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+
+
+#infoMuramana{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+	width:300px;
+}
+
+#nomMuramana{
+	background : none;
+	width:210px;
+	text-transform : uppercase;
+	margin-left:30px;
+	color : #261ce4;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effMuramana{
+	background : none;
+	width:260px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #261ce4;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+#etatMuramana{
+	display: flex;
+	flex-direction: column;
+}
+
+#achatMuramana{
+	background : none;
+	width:50px;
+	margin-left:30px;
+	margin-top:20px;
+	text-transform : uppercase;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : left;
+	border:none;
+	margin-bottom:10px;
+}
+
+#stackMuramana{
+	background : none;
+	text-transform : uppercase;
+	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	border:none;
+}
