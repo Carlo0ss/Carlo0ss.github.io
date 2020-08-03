@@ -7,7 +7,7 @@ var ShroomParClic;
 var shroom=0;
 var shroomSave=parseFloat(localStorage.nbshrooms);
 if(parseInt(localStorage.nbshrooms)>0){
-	shroom=shroom+shroomSave;
+	shroom=shroom+999999999;
 }
 
 
@@ -843,7 +843,7 @@ $(document).ready(function(){
 				arbrisseau=arbrisseau+1;
 				maokai=maokai-5;
 				$("#achatArbrisseau").val(arbrisseau+"/3");
-				var effmaokai=120+(arbrisseau*10);
+				var effmaokai=100+(arbrisseau*10);
 				$("#effMaokai").val(effmaokai+" SHrooms/s");
 				$("#nbMaokai").val(maokai+" maokai");
 			}
@@ -1039,7 +1039,7 @@ $(document).ready(function(){
 /******************************/
 
 setInterval(function(){    
-	ShroomParSec=teemo*effetTeemo+ivern*10+velkoz*3.14+nidalee*27+thresh*58+senna*3000+maokai*(120+(10*arbrisseau))+jhin*4444+aphelios*200+viktor*effetViktor;  //a modifier a chaque champions créés
+	ShroomParSec=teemo*effetTeemo+ivern*10+velkoz*3.14+nidalee*27+thresh*58+senna*3000+maokai*(100+(10*arbrisseau))+jhin*4444+aphelios*200+viktor*effetViktor;  //a modifier a chaque champions créés
 	ShroomParSec=ShroomParSec+(ShroomParSec*runaanSec)+guinsoo*(effetGuinsoo*1.5); // a modifier a chaque items créés
 	ShroomParClic=1+pink*0.75+oracle*2+((dague*0.5)+runaanClick)+manamune*5+((shroom*0.001)*muramana)+guinsoo*(effetGuinsoo*3); //a modifier a chaque items / champions créés
 	ShroomParClic=ShroomParClic+(ShroomParClic*(0.03*calibrum))+(ShroomParClic*(0.03*severum))+(ShroomParClic*(0.03*gravitum))+(ShroomParClic*(0.03*infernum))+(ShroomParClic*(0.03*crescendum))
