@@ -1081,7 +1081,7 @@ setInterval(function(){
 	localStorage.setItem("nbstackmanamune", stackManamune);
 
 	/*Affichages*/
-	$("#affichage").val(Math.round(shroom*100)/100);
+	$("#affichage").val(Math.round(shroom));
 	$("#parSec").val(Math.round(ShroomParSec*100)/100+" Shrooms/S");
 	$("#parClic").val(Math.round(ShroomParClic*100)/100+" Shrooms/Click");
 
@@ -1314,12 +1314,14 @@ setInterval(function(){
 	}
 
 
+	shroom=shroom+(ShroomParSec/10);
+
 }, 100);
 
 	
 
 setInterval(function(){    
-	shroom=shroom+ShroomParSec;
+	
 	timerGuinsoo=timerGuinsoo+1;
 
 }, 1000);
