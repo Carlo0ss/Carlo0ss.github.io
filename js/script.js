@@ -1081,7 +1081,26 @@ setInterval(function(){
 	localStorage.setItem("nbstackmanamune", stackManamune);
 
 	/*Affichages*/
-	$("#affichage").val(Math.round(shroom));
+	var strShroom=new String(Math.round(shroom));
+	var compteur=0;
+	var strAffichageTempo="";
+	var strAffichage="";
+	for(let i=strShroom.length; i>0; i--){
+		var chiffre=strShroom.substring(i-1, i);
+		strAffichageTempo=strAffichageTempo+chiffre;
+		compteur=compteur+1;
+		if(compteur==3){
+			strAffichageTempo=strAffichageTempo+" ";
+			compteur=0;
+		}
+	}
+	for(let i=strAffichageTempo.length; i>0;i--){
+		var chiffre=strAffichageTempo.substring(i-1, i);
+		strAffichage=strAffichage+chiffre;
+	}
+	
+	shroom=shroom+(ShroomParSec/10);
+	$("#affichage").val(strAffichage);
 	$("#parSec").val(Math.round(ShroomParSec*100)/100+" Shrooms/S");
 	$("#parClic").val(Math.round(ShroomParClic*100)/100+" Shrooms/Click");
 
@@ -1314,8 +1333,12 @@ setInterval(function(){
 	}
 
 
-	shroom=shroom+(ShroomParSec/10);
+	
 
+	
+
+
+	
 }, 100);
 
 	
