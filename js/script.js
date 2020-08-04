@@ -7,7 +7,7 @@ var ShroomParClic;
 var shroom=0;
 var shroomSave=parseFloat(localStorage.nbshrooms);
 if(parseInt(localStorage.nbshrooms)>0){
-	shroom=shroom+shroomSave;
+	shroom=shroom+9999999999999;
 }
 
 
@@ -863,13 +863,13 @@ $(document).ready(function(){
 
 	$("#CalibrumB").click(function(){
 		if(calibrum<1){
-			if(shroom>=75000){
+			if(shroom>=300000){
 				var sonBouton=new Audio("Son/achat.wav");
 				sonBouton.volume=0.005;
 				sonBouton.play();
 
 				calibrum=calibrum+1;
-				shroom=shroom-75000;
+				shroom=shroom-300000;
 				$("#achatCalibrum").val(calibrum+"/1");
 			}
 		}
@@ -886,7 +886,7 @@ $(document).ready(function(){
 				sonBouton.play();
 
 				severum=severum+1;
-				shroom=shroom-75000;
+				shroom=shroom-300000;
 				$("#achatSeverum").val(severum+"/1");
 			}
 		}
@@ -903,7 +903,7 @@ $(document).ready(function(){
 				sonBouton.play();
 
 				gravitum=gravitum+1;
-				shroom=shroom-75000;
+				shroom=shroom-300000;
 				$("#achatGravitum").val(gravitum+"/1");
 			}
 		}
@@ -920,7 +920,7 @@ $(document).ready(function(){
 				sonBouton.play();
 
 				infernum=infernum+1;
-				shroom=shroom-75000;
+				shroom=shroom-300000;
 				$("#achatInfernum").val(infernum+"/1");
 			}
 		}
@@ -937,7 +937,7 @@ $(document).ready(function(){
 				sonBouton.play();
 
 				crescendum=crescendum+1;
-				shroom=shroom-75000;
+				shroom=shroom-300000;
 				$("#achatCrescendum").val(crescendum+"/1");
 			}
 		}
@@ -950,13 +950,13 @@ $(document).ready(function(){
 	$("#achatHexCore").val(hexcore+"/4");
 	$("#HexCoreB").click(function(){
 		if(hexcore==3){
-			if(shroom>=100000){
+			if(shroom>=1000000){
 				var sonBouton=new Audio("Son/achat.wav");
 				sonBouton.volume=0.005;
 				sonBouton.play();
 
 				hexcore=hexcore+1;
-				shroom=shroom-100000;
+				shroom=shroom-1000000;
 				effetViktor=445;
 				prixViktor=290000;
 				$("#achatHexCore").val(hexcore+"/4");
@@ -965,13 +965,13 @@ $(document).ready(function(){
 			}
 		}
 		if(hexcore==2){
-			if(shroom>=100000){
+			if(shroom>=1000000){
 				var sonBouton=new Audio("Son/achat.wav");
 				sonBouton.volume=0.005;
 				sonBouton.play();
 
 				hexcore=hexcore+1;
-				shroom=shroom-100000;
+				shroom=shroom-1000000;
 				effetViktor=430;
 				prixViktor=295000;
 				$("#achatHexCore").val(hexcore+"/4");
@@ -980,13 +980,13 @@ $(document).ready(function(){
 			}
 		}
 		if(hexcore==1){
-			if(shroom>=100000){
+			if(shroom>=1000000){
 				var sonBouton=new Audio("Son/achat.wav");
 				sonBouton.volume=0.005;
 				sonBouton.play();
 
 				hexcore=hexcore+1;
-				shroom=shroom-100000;
+				shroom=shroom-1000000;
 				effetViktor=415;
 				prixViktor=300000;
 				$("#achatHexCore").val(hexcore+"/4");
@@ -1004,7 +1004,7 @@ $(document).ready(function(){
 				effetViktor=400;
 				prixViktor=305000;
 				$("#achatHexCore").val(hexcore+"/4");
-				$("#prixHexCore").val("prix: 100 000 shrooms");
+				$("#prixHexCore").val("prix: 1 000 000 shrooms");
 				$("#prixViktor").val("prix: 305 000 shrooms");
 				$("#effViktor").val("400 Shrooms/s");
 			}
