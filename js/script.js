@@ -7,7 +7,7 @@ var ShroomParClic;
 var shroom=0;
 var shroomSave=parseFloat(localStorage.nbshrooms);
 if(parseInt(localStorage.nbshrooms)>0){
-	shroom=shroom+999999999;
+	shroom=shroom+shroomSave;
 }
 
 
