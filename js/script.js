@@ -1461,7 +1461,7 @@ setInterval(function(){
 		$("#stackLuden").val("");
 	}
 
-	if(stackLuden>=180){
+	if(luden==1 && stackLuden>=180){
 		
 		shroom=shroom+(shroom*0.15);
 		var sonBouton=new Audio("Son/luden.mp3");
@@ -1525,6 +1525,9 @@ setInterval(function(){
 setInterval(function(){    
 	
 	timerGuinsoo=timerGuinsoo+1;
-	stackLuden=stackLuden+1;
+	if(luden==1){
+		stackLuden=stackLuden+1;
+	}
+	
 
 }, 1000);
