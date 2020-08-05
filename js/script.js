@@ -1125,6 +1125,7 @@ $(document).ready(function(){
 				sonBouton.volume=0.005;
 				sonBouton.play();
 				luden=luden+1;
+				stackLuden=0;
 				shroom=shroom-1800000;
 				$("#achatLuden").val(luden+"/1");	
 				$("#stackLuden").val(stackLuden+"/180");
