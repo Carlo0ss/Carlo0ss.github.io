@@ -7,7 +7,7 @@ var ShroomParClic;
 var shroom=0;
 var shroomSave=parseFloat(localStorage.nbshrooms);
 if(parseInt(localStorage.nbshrooms)>0){
-	shroom=shroom+shroomSave;
+	shroom=shroom+9999999;
 }
 
 
@@ -261,6 +261,7 @@ $(document).ready(function(){
 		muramana=0;
 
 		stackCull=0;
+		stackMejai=0;
 		stackTear=0;
 		stackManamune=0;
 
@@ -836,7 +837,7 @@ $(document).ready(function(){
 				sonBouton.play();
 				mejai=mejai+1;
 				shroom=shroom-120000;
-				$("#achatmejai").val(mejai+"/1");	
+				$("#achatMejai").val(mejai+"/1");	
 				$("#stackMejai").val(stackMejai+"/2000");
 			}
 		}
