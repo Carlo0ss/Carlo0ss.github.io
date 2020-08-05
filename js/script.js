@@ -7,7 +7,7 @@ var ShroomParClic;
 var shroom=0;
 var shroomSave=parseFloat(localStorage.nbshrooms);
 if(parseInt(localStorage.nbshrooms)>0){
-	shroom=shroom+shroomSave;
+	shroom=shroom+999999999;
 }
 
 
@@ -808,13 +808,13 @@ $(document).ready(function(){
 
 	$("#LanterneB").click(function(){
 		if(lanterne<1){
-			if(thresh>=50){
+			if(thresh>=60){
 				var sonBouton=new Audio("Son/lanterne.wav");
 				sonBouton.volume=0.01;
 				sonBouton.play();
 
 				lanterne=lanterne+1;
-				thresh=thresh-50;
+				thresh=thresh-60;
 				$("#achatLanterne").val(lanterne+"/1");
 				$("#senna").show();
 				setTimeout(function(){  var sonBouton=new Audio("https://vignette.wikia.nocookie.net/leagueoflegends/images/a/ac/Senna_Original_Move_1.ogg/revision/latest?cb=20200227205927");
