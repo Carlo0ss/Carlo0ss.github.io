@@ -1214,7 +1214,7 @@ setInterval(function(){
 		$("#Runaan").show();
 		runaan=1;
 		runaanClick=1.5;
-		runaanSec=0.15;
+		runaanSec=0.075;
 		
 	}
 	else{
