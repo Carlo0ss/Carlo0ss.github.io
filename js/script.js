@@ -212,7 +212,7 @@ if(parseInt(localStorage.nbluden)>0){
 var stackLuden=0;
 var stackLudenSave=parseInt(localStorage.nbstackluden);
 if(parseInt(localStorage.nbstackluden)>0){
-	stackLuden=stackLuden+175;
+	stackLuden=stackLuden+stackLudenSave;
 }
 
 
