@@ -203,6 +203,19 @@ if(parseInt(localStorage.nbstackstatikk)>0){
 	stackStatikk=stackStatikk+stackStatikkSave;
 }
 
+var luden=0;
+var ludenSave=parseInt(localStorage.nbluden);
+if(parseInt(localStorage.nbluden)>0){
+	luden=luden+ludenSave;
+}
+
+var stackLuden=0;
+var stackLudenSave=parseInt(localStorage.nbstackluden);
+if(parseInt(localStorage.nbstackluden)>0){
+	stackLuden=stackLuden+175;
+}
+
+
 var tear=0;
 var stackTear=0;
 var tearSave=parseInt(localStorage.nbtear);
@@ -268,6 +281,7 @@ $(document).ready(function(){
 
 		hexcore=0;
 		statikk=0;
+		luden=0;
 		tear=0;
 		manamune=0;
 		muramana=0;
@@ -275,6 +289,7 @@ $(document).ready(function(){
 		stackCull=0;
 		stackMejai=0;
 		stackStatikk=0;
+		stackLuden=0;
 		stackTear=0;
 		stackManamune=0;
 
@@ -309,6 +324,7 @@ $(document).ready(function(){
 
 		localStorage.setItem("nbhexcore", hexcore);
 		localStorage.setItem("nbstatikk", statikk);
+		localStorage.setItem("nbluden", luden);
 		localStorage.setItem("nbtear", tear);
 		localStorage.setItem("nbmanamune", manamune);
 		localStorage.setItem("nbmuramana", muramana);
@@ -317,6 +333,7 @@ $(document).ready(function(){
 		localStorage.setItem("nbstackcull", stackCull);
 		localStorage.setItem("nbstackmejai", stackMejai);
 		localStorage.setItem("nbstackstatikk", stackStatikk);
+		localStorage.setItem("nbstackLuden", stackLuden);
 		localStorage.setItem("nbstacktear", stackTear);
 		localStorage.setItem("nbstackmanamune", stackManamune);
 
@@ -1099,6 +1116,22 @@ $(document).ready(function(){
 		
 	});	
 
+	$("#achatLuden").val(luden+"/1");
+
+	$("#LudenB").click(function(){
+		if(luden<1){
+			if(shroom>=1800000){
+				var sonBouton=new Audio("Son/achat.wav");
+				sonBouton.volume=0.005;
+				sonBouton.play();
+				luden=luden+1;
+				shroom=shroom-1800000;
+				$("#achatLuden").val(luden+"/1");	
+				$("#stackLuden").val(stackLuden+"/180");
+			}
+		}
+	});
+
 	$("#achatTear").val(tear+"/1");
 
 	$("#TearB").click(function(){
@@ -1161,6 +1194,7 @@ setInterval(function(){
 
 	localStorage.setItem("nbstatikk", statikk);
 	localStorage.setItem("nbhexcore", hexcore);
+	localStorage.setItem("nbluden", luden);
 	localStorage.setItem("nbtear", tear);
 	localStorage.setItem("nbmanamune", manamune);
 	localStorage.setItem("nbmuramana", muramana);
@@ -1170,6 +1204,7 @@ setInterval(function(){
 	localStorage.setItem("nbstackcull", stackCull);
 	localStorage.setItem("nbstackmejai", stackMejai);
 	localStorage.setItem("nbstackstatikk", stackStatikk);
+	localStorage.setItem("nbstackluden", stackLuden);
 	localStorage.setItem("nbstacktear", stackTear);
 	localStorage.setItem("nbstackmanamune", stackManamune);
 
@@ -1351,11 +1386,9 @@ setInterval(function(){
 		$("#stackStatikk").val("");
 	}
 
-	if(mejai==1 && stackMejai>=2000){
-		$("#MejaiB").css("background-image", "url(./images/mejai2.png)");
-		$("#MejaiB").attr("disabled", true);
-		
-	}
+
+	
+
 
 	if(lanterne==1){
 		$("#LanterneB").css("background-image", "url(./images/lanterne2.png)");
@@ -1419,6 +1452,24 @@ setInterval(function(){
 		$("#HexCoreB").attr("disabled", false);
 	}
 
+	if(luden==1){
+		$("#LudenB").attr("disabled", true);
+		$("#stackLuden").val(stackLuden+"/180");
+	}
+	else if(luden==0){
+		$("#LudenB").attr("disabled", false);
+		$("#stackLuden").val("");
+	}
+
+	if(stackLuden>=180){
+		
+		shroom=shroom+(shroom*0.15);
+		var sonBouton=new Audio("Son/luden.mp3");
+		sonBouton.volume=1;
+		sonBouton.play();
+		stackLuden=0;
+	}
+
 	if(tear==1 && stackTear<2500){
 		$("#TearB").attr("disabled", true);
 		$("#stackTear").val(stackTear+"/2500");
@@ -1474,5 +1525,6 @@ setInterval(function(){
 setInterval(function(){    
 	
 	timerGuinsoo=timerGuinsoo+1;
+	stackLuden=stackLuden+1;
 
 }, 1000);

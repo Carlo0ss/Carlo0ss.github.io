@@ -2049,6 +2049,102 @@ body{
 	text-align : center;
 	border:none;
 }
+
+/******************************/
+/*TOUT CE QUI CONCERNE le luden*/
+/******************************/
+
+#Luden{
+	width:695px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+
+}
+
+#LudenB{
+	background-image:url("images/luden.png");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+
+
+#infoLuden{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+	width:337px;
+}
+
+#nomLuden{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #9370db;
+	font : 140% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixLuden{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #9370db;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effLuden{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #9370db;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+#etatLuden{
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+
+#achatLuden{
+	background : none;
+	width:50px;
+	margin-left:30px;
+	margin-top:20px;
+	text-transform : uppercase;
+	color : #9370db;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : left;
+	border:none;
+	margin-bottom:10px;
+}
+
+#stackLuden{
+	background : none;
+	width:100px;
+	text-transform : uppercase;
+	color : #9370db;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	border:none;
+}
+
 /******************************/
 /*TOUT CE QUI CONCERNE la tear*/
 /******************************/
