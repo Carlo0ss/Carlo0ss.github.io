@@ -191,6 +191,17 @@ if(parseInt(localStorage.nbhexcore)>0){
 	hexcore=hexcore+hexcoreSave;
 }
 
+var statikk=0;
+var statikkSave=parseInt(localStorage.nbstatikk);
+if(parseInt(localStorage.nbstatikk)>0){
+	statikk=statikk+statikkSave;
+}
+
+var stackStatikk=0;
+var stackStatikkSave=parseInt(localStorage.nbstackstatikk);
+if(parseInt(localStorage.nbstackstatikk)>0){
+	stackStatikk=stackStatikk+stackStatikkSave;
+}
 
 var tear=0;
 var stackTear=0;
@@ -256,12 +267,14 @@ $(document).ready(function(){
 		crescendum=0;
 
 		hexcore=0;
+		statikk=0;
 		tear=0;
 		manamune=0;
 		muramana=0;
 
 		stackCull=0;
 		stackMejai=0;
+		stackStatikk=0;
 		stackTear=0;
 		stackManamune=0;
 
@@ -295,6 +308,7 @@ $(document).ready(function(){
 		localStorage.setItem("nbcrescendum", crescendum);
 
 		localStorage.setItem("nbhexcore", hexcore);
+		localStorage.setItem("nbstatikk", statikk);
 		localStorage.setItem("nbtear", tear);
 		localStorage.setItem("nbmanamune", manamune);
 		localStorage.setItem("nbmuramana", muramana);
@@ -302,6 +316,7 @@ $(document).ready(function(){
 
 		localStorage.setItem("nbstackcull", stackCull);
 		localStorage.setItem("nbstackmejai", stackMejai);
+		localStorage.setItem("nbstackstatikk", stackStatikk);
 		localStorage.setItem("nbstacktear", stackTear);
 		localStorage.setItem("nbstackmanamune", stackManamune);
 
@@ -385,6 +400,19 @@ $(document).ready(function(){
 		if(mejai==1 && stackMejai==2000){
 			stackMejai=2000;
 			$("#stackMejai").val(stackMejai+"/2000");
+		}
+
+		if(statikk==1 && stackStatikk<200){
+			stackStatikk=stackStatikk+1;
+			$("#stackStatikk").val(stackStatikk+"/200");
+		}
+		if(statikk==1 && stackStatikk==200){
+			stackStatikk=0;
+			$("#stackMejai").val(stackMejai+"/200");
+			shroom=shroom+(shroom*0.075);
+			var sonBouton=new Audio("Son/statikk.wav");
+			sonBouton.volume=0.01;
+			sonBouton.play();
 		}
 	});
 	
@@ -985,6 +1013,21 @@ $(document).ready(function(){
 		
 	});	
 
+	$("#achatStatikk").val(statikk+"/1");
+
+	$("#StatikkB").click(function(){
+		if(statikk<1){
+			if(shroom>=720000){
+				var sonBouton=new Audio("Son/achat.wav");
+				sonBouton.volume=0.005;
+				sonBouton.play();
+				statikk=statikk+1;
+				shroom=shroom-720000;
+				$("#achatStatikk").val(statikk+"/1");	
+				$("#stackStatikk").val(stackStatikk+"/200");
+			}
+		}
+	});
 
 	$("#HexCore").hide();
 
@@ -1116,6 +1159,7 @@ setInterval(function(){
 	localStorage.setItem("nbinfernum", infernum);
 	localStorage.setItem("nbcrescendum", crescendum);
 
+	localStorage.setItem("nbstatikk", statikk);
 	localStorage.setItem("nbhexcore", hexcore);
 	localStorage.setItem("nbtear", tear);
 	localStorage.setItem("nbmanamune", manamune);
@@ -1125,6 +1169,7 @@ setInterval(function(){
 
 	localStorage.setItem("nbstackcull", stackCull);
 	localStorage.setItem("nbstackmejai", stackMejai);
+	localStorage.setItem("nbstackstatikk", stackStatikk);
 	localStorage.setItem("nbstacktear", stackTear);
 	localStorage.setItem("nbstackmanamune", stackManamune);
 
@@ -1297,6 +1342,20 @@ setInterval(function(){
 		
 	}
 
+	if(statikk==1){
+		$("#StatikkB").attr("disabled", true);
+		$("#stackStatikk").val(stackStatikk+"/200");
+	}
+	else if(statikk==0){
+		$("#StatikkB").attr("disabled", false);
+		$("#stackStatikk").val("");
+	}
+
+	if(mejai==1 && stackMejai>=2000){
+		$("#MejaiB").css("background-image", "url(./images/mejai2.png)");
+		$("#MejaiB").attr("disabled", true);
+		
+	}
 
 	if(lanterne==1){
 		$("#LanterneB").css("background-image", "url(./images/lanterne2.png)");
