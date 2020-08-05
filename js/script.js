@@ -56,6 +56,7 @@ if(parseInt(localStorage.nbsenna)>0){
 }
 
 var maokai=0;
+
 var maokaiSave=parseInt(localStorage.nbmaokai);
 if(parseInt(localStorage.nbmaokai)>0){
 	maokai=maokai+maokaiSave;
@@ -929,8 +930,8 @@ $(document).ready(function(){
 				arbrisseau=arbrisseau+1;
 				maokai=maokai-5;
 				$("#achatArbrisseau").val(arbrisseau+"/3");
-				var effmaokai=100+(arbrisseau*10);
-				$("#effMaokai").val(effmaokai+" SHrooms/s");
+				
+				
 				$("#nbMaokai").val(maokai+" maokai");
 			}
 		}
@@ -1402,6 +1403,8 @@ setInterval(function(){
 	}
 
 
+	var effmaokai=100+(arbrisseau*10);
+	$("#effMaokai").val(effmaokai+" SHrooms/s");
 	if(arbrisseau==3){
 		$("#ArbrisseauB").css("background-image", "url(./images/arbrisseau2.png)");
 		$("#ArbrisseauB").attr("disabled", true);
@@ -1409,6 +1412,8 @@ setInterval(function(){
 	else{
 		$("#ArbrisseauB").attr("disabled", false);
 	}
+
+
 
 	if(calibrum==1){
 		$("#CalibrumB").attr("disabled", true);
