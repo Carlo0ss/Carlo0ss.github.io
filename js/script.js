@@ -130,6 +130,18 @@ if(parseInt(localStorage.nbguinsoo)>0){
 	guinsoo=guinsoo+guinsooSave;
 }
 
+var mejai=0;
+var mejaiSave=parseInt(localStorage.nbmejai);
+if(parseInt(localStorage.nbmejai)>0){
+	mejai=mejai+mejaiSave;
+}
+
+var stackMejai=0;
+var stackMejaiSave=parseInt(localStorage.nbstackmejai);
+if(parseInt(localStorage.nbstackmejai)>0){
+	stackMejai=stackMejai+stackMejaiSave;
+}
+
 
 var lanterne=0;
 var lanterneSave=parseInt(localStorage.nblanterne);
@@ -233,13 +245,16 @@ $(document).ready(function(){
 		dague=0;
 		runaan=0;
 		guinsoo=0;
+		mejai=0;
 		lanterne=0;
 		arbrisseau=0;
+
 		calibrum=0;
 		severum=0;
 		gravitum=0;
 		infernum=0;
 		crescendum=0;
+
 		hexcore=0;
 		tear=0;
 		manamune=0;
@@ -268,6 +283,7 @@ $(document).ready(function(){
 		localStorage.setItem("nboracle", oracle);
 		localStorage.setItem("nbdague", dague);
 		localStorage.setItem("nbguinsoo", guinsoo);
+		localStorage.setItem("nbmejai", mejai);
 		localStorage.setItem("nblanterne", lanterne);
 		localStorage.setItem("nbarbrisseau", arbrisseau);
 
@@ -284,6 +300,7 @@ $(document).ready(function(){
 
 
 		localStorage.setItem("nbstackcull", stackCull);
+		localStorage.setItem("nbstackmejai", stackMejai);
 		localStorage.setItem("nbstacktear", stackTear);
 		localStorage.setItem("nbstackmanamune", stackManamune);
 
@@ -360,7 +377,14 @@ $(document).ready(function(){
 			timerGuinsoo=0;
 		}
 		
-
+		if(mejai==1 && stackMejai<2000){
+			stackMejai=stackMejai+1;
+			$("#stackMejai").val(stackMejai+"/2000");
+		}
+		if(mejai==1 && stackMejai==2000){
+			stackMejai=2000;
+			$("#stackMejai").val(stackMejai+"/2000");
+		}
 	});
 	
 
@@ -802,6 +826,22 @@ $(document).ready(function(){
 		}
 	});	
 
+	$("#achatMejai").val(mejai+"/1");
+
+	$("#MejaiB").click(function(){
+		if(mejai<1){
+			if(shroom>=120000){
+				var sonBouton=new Audio("Son/achat.wav");
+				sonBouton.volume=0.005;
+				sonBouton.play();
+				mejai=mejai+1;
+				shroom=shroom-120000;
+				$("#achatmejai").val(mejai+"/1");	
+				$("#stackMejai").val(stackMejai+"/2000");
+			}
+		}
+	});
+
 
 	$("#Lanterne").hide();
 	$("#achatLanterne").val(lanterne+"/1");
@@ -960,6 +1000,7 @@ $(document).ready(function(){
 				effetViktor=445;
 				prixViktor=290000;
 				$("#achatHexCore").val(hexcore+"/4");
+				$("#prixHexCore").val("prix: 1 000 000 shrooms");
 				$("#prixViktor").val("prix: 290 000 shrooms");
 				$("#effViktor").val("445 Shrooms/s");
 			}
@@ -975,6 +1016,7 @@ $(document).ready(function(){
 				effetViktor=430;
 				prixViktor=295000;
 				$("#achatHexCore").val(hexcore+"/4");
+				$("#prixHexCore").val("prix: 1 000 000 shrooms");
 				$("#prixViktor").val("prix: 295 000 shrooms");
 				$("#effViktor").val("430 Shrooms/s");
 			}
@@ -990,6 +1032,7 @@ $(document).ready(function(){
 				effetViktor=415;
 				prixViktor=300000;
 				$("#achatHexCore").val(hexcore+"/4");
+				$("#prixHexCore").val("prix: 1 000 000 shrooms");
 				$("#prixViktor").val("prix: 300 000 shrooms");
 				$("#effViktor").val("415 Shrooms/s");
 			}
@@ -1040,7 +1083,7 @@ $(document).ready(function(){
 
 setInterval(function(){    
 	ShroomParSec=teemo*effetTeemo+ivern*10+velkoz*3.14+nidalee*27+thresh*58+senna*3000+maokai*(100+(10*arbrisseau))+jhin*4444+aphelios*200+viktor*effetViktor;  //a modifier a chaque champions créés
-	ShroomParSec=ShroomParSec+(ShroomParSec*runaanSec)+guinsoo*(effetGuinsoo*1.5); // a modifier a chaque items créés
+	ShroomParSec=ShroomParSec+(ShroomParSec*runaanSec)+guinsoo*(effetGuinsoo*1.5)+mejai*(0.1*stackMejai); // a modifier a chaque items créés
 	ShroomParClic=1+pink*0.75+oracle*2+((dague*0.5)+runaanClick)+manamune*5+((shroom*0.001)*muramana)+guinsoo*(effetGuinsoo*3); //a modifier a chaque items / champions créés
 	ShroomParClic=ShroomParClic+(ShroomParClic*(0.03*calibrum))+(ShroomParClic*(0.03*severum))+(ShroomParClic*(0.03*gravitum))+(ShroomParClic*(0.03*infernum))+(ShroomParClic*(0.03*crescendum))
 	/*CHAMPIONS*/
@@ -1064,11 +1107,14 @@ setInterval(function(){
 	localStorage.setItem("nbguinsoo", guinsoo);
 	localStorage.setItem("nblanterne", lanterne);
 	localStorage.setItem("nbarbrisseau", arbrisseau);
+	localStorage.setItem("nbmejai", mejai);
+
 	localStorage.setItem("nbcalibrum", calibrum);
 	localStorage.setItem("nbseverum", severum);
 	localStorage.setItem("nbgravitum", gravitum);
 	localStorage.setItem("nbinfernum", infernum);
 	localStorage.setItem("nbcrescendum", crescendum);
+
 	localStorage.setItem("nbhexcore", hexcore);
 	localStorage.setItem("nbtear", tear);
 	localStorage.setItem("nbmanamune", manamune);
@@ -1077,6 +1123,7 @@ setInterval(function(){
 	/*STACK ITEMS*/
 
 	localStorage.setItem("nbstackcull", stackCull);
+	localStorage.setItem("nbstackmejai", stackMejai);
 	localStorage.setItem("nbstacktear", stackTear);
 	localStorage.setItem("nbstackmanamune", stackManamune);
 
@@ -1145,6 +1192,7 @@ setInterval(function(){
 		$("#prixHexCore").css("color", "#edcc82");
 		$("#effHexCore").css("color", "#edcc82");
 		$("#achatHexCore").css("color", "#edcc82");
+		$("#prixHexCore").val("prix: 1 000 000 shrooms");
 	}
 	else if(hexcore==2){
 		$("#HexCoreB").css("background-image", "url(./images/hexcore3.png)");
@@ -1152,6 +1200,7 @@ setInterval(function(){
 		$("#prixHexCore").css("color", "#48abf7");
 		$("#effHexCore").css("color", "#48abf7");
 		$("#achatHexCore").css("color", "#48abf7");
+		$("#prixHexCore").val("prix: 1 000 000 shrooms");
 	}
 	else if(hexcore==3){
 		$("#HexCoreB").css("background-image", "url(./images/hexcore4.png)");
@@ -1159,6 +1208,7 @@ setInterval(function(){
 		$("#prixHexCore").css("color", "#cd4627");
 		$("#effHexCore").css("color", "#cd4627");
 		$("#achatHexCore").css("color", "#cd4627");
+		$("#prixHexCore").val("prix: 1 000 000 shrooms");
 	}
 	else if(hexcore==4){
 		$("#HexCoreB").css("background-image", "url(./images/hexcore5.png)");
@@ -1166,6 +1216,7 @@ setInterval(function(){
 		$("#prixHexCore").css("color", "#cd4627");
 		$("#effHexCore").css("color", "#cd4627");
 		$("#achatHexCore").css("color", "#cd4627");
+		$("#prixHexCore").val("prix: 1 000 000 shrooms");
 	}
 	
 	/*LIMITES D'ITEMS*/
@@ -1177,12 +1228,12 @@ setInterval(function(){
 	}
 	else if(cull==0){
 		$("#CullB").attr("disabled", false);
-		$("#stackTear").val("");
+		$("#stackCull").val("");
 	}
 
 	if(cull==1 && stackCull>=1500){
 		$("#CullB").css("background-image", "url(./images/cull2.png)");
-		$("#CullB").attr("disabled", false);
+		$("#CullB").attr("disabled", true);
 		$("#stackCull").val("Stackée");
 	}
 
@@ -1229,6 +1280,22 @@ setInterval(function(){
 	else{
 		$("#GuinsooB").attr("disabled", false);
 	}
+
+	if(mejai==1 && stackMejai<2000){
+		$("#MejaiB").attr("disabled", true);
+		$("#stackMejai").val(stackMejai+"/2000");
+	}
+	else if(mejai==0){
+		$("#MejaiB").attr("disabled", false);
+		$("#stackMejai").val("");
+	}
+
+	if(mejai==1 && stackMejai>=2000){
+		$("#MejaiB").css("background-image", "url(./images/mejai2.png)");
+		$("#MejaiB").attr("disabled", true);
+		
+	}
+
 
 	if(lanterne==1){
 		$("#LanterneB").css("background-image", "url(./images/lanterne2.png)");
@@ -1286,6 +1353,7 @@ setInterval(function(){
 
 	if(hexcore==4){
 		$("#HexCoreB").attr("disabled", true);
+		
 	}
 	else{
 		$("#HexCoreB").attr("disabled", false);
