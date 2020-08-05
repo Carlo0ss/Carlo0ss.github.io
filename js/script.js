@@ -930,8 +930,6 @@ $(document).ready(function(){
 				arbrisseau=arbrisseau+1;
 				maokai=maokai-5;
 				$("#achatArbrisseau").val(arbrisseau+"/3");
-				
-				
 				$("#nbMaokai").val(maokai+" maokai");
 			}
 		}
