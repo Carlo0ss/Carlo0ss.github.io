@@ -1274,6 +1274,8 @@ setInterval(function(){
 		$("#effHexCore").css("color", "#edcc82");
 		$("#achatHexCore").css("color", "#edcc82");
 		$("#prixHexCore").val("prix: 1 000 000 shrooms");
+		$("#prixViktor").val("prix: 305 000 shrooms");
+		$("#effViktor").val("400 Shrooms/s");
 	}
 	else if(hexcore==2){
 		$("#HexCoreB").css("background-image", "url(./images/hexcore3.png)");
@@ -1282,6 +1284,8 @@ setInterval(function(){
 		$("#effHexCore").css("color", "#48abf7");
 		$("#achatHexCore").css("color", "#48abf7");
 		$("#prixHexCore").val("prix: 1 000 000 shrooms");
+		$("#prixViktor").val("prix: 300 000 shrooms");
+		$("#effViktor").val("415 Shrooms/s");
 	}
 	else if(hexcore==3){
 		$("#HexCoreB").css("background-image", "url(./images/hexcore4.png)");
@@ -1290,6 +1294,8 @@ setInterval(function(){
 		$("#effHexCore").css("color", "#cd4627");
 		$("#achatHexCore").css("color", "#cd4627");
 		$("#prixHexCore").val("prix: 1 000 000 shrooms");
+		$("#prixViktor").val("prix: 295 000 shrooms");
+		$("#effViktor").val("430 Shrooms/s");
 	}
 	else if(hexcore==4){
 		$("#HexCoreB").css("background-image", "url(./images/hexcore5.png)");
@@ -1298,6 +1304,8 @@ setInterval(function(){
 		$("#effHexCore").css("color", "#cd4627");
 		$("#achatHexCore").css("color", "#cd4627");
 		$("#prixHexCore").val("prix: 1 000 000 shrooms");
+		$("#prixViktor").val("prix: 290 000 shrooms");
+		$("#effViktor").val("445 Shrooms/s");
 	}
 	
 	/*LIMITES D'ITEMS*/
