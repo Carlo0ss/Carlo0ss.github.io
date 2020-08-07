@@ -711,6 +711,71 @@ body{
 	border:none;
 }
 
+
+/******************************/
+/*TOUT CE QUI CONCERNE kayn*/
+/******************************/
+
+#kayn{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#kaynB{
+	width:850px;
+	height:150px;
+	background-image:url("images/kayn.jpg");
+	background-size:100%;
+	text-align:left top;
+	background-position:center;
+}
+
+#infoKayn{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbKayn{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color :#2f4f4f ;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixKayn{
+	background : none;
+	width:185px;
+	height:100%;
+	text-transform : uppercase;
+	color : #2f4f4f ;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effKayn{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color :#2f4f4f;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+
 /******************************/
 /*TOUT CE QUI CONCERNE jhin*/
 /******************************/
@@ -2142,6 +2207,158 @@ body{
 	color : #9370db;
 	font : 120% impact, futura, sans-serif;
 	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE la forme assassin*/
+/******************************/
+
+#Assassin{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#AssassinB{
+	background:none;
+	border:none;
+	background-image:url("images/assassin.jpg");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoAssassin{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomAssassin{
+	background : none;
+	width:250px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #271ee8;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixAssassin{
+	background : none;
+	width:300px;
+	text-transform : uppercase;
+	margin-left:20px;
+	color : #271ee8;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effAssassin{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #271ee8;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatAssassin{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #271ee8;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE la forme darkin*/
+/******************************/
+
+#Darkin{
+	width:595px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+}
+
+#DarkinB{
+	background:none;
+	border:none;
+	background-image:url("images/darkin.jpg");
+	width:100px;
+	height:100px;
+	background-size: cover;
+
+}
+
+#infoDarkin{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+}
+
+#nomDarkin{
+	background : none;
+	width:260px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color :#eb2c2c;
+	font : 160% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixDarkin{
+	background : none;
+	width:300px;
+	text-transform : uppercase;
+	margin-left:20px;
+	color : #eb2c2c;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effDarkin{
+	background : none;
+	width:350px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #eb2c2c;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#achatDarkin{
+	background : none;
+	width:40px;
+	margin-left:5px;
+	text-transform : uppercase;
+	color : #eb2c2c;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
 	border:none;
 }
 

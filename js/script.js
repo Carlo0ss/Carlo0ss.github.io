@@ -77,6 +77,14 @@ if(parseInt(localStorage.nbviktor)>0){
 	viktor=viktor+viktorSave;
 }
 
+var kayn=0;
+var effetKayn=1200;
+var prixKayn=900000;
+var kaynSave=parseInt(localStorage.nbkayn);
+if(parseInt(localStorage.nbkayn)>0){
+	kayn=kayn+kaynSave;
+}
+
 
 var jhin=0;
 var jhinSave=parseInt(localStorage.nbjhin);
@@ -210,6 +218,18 @@ if(parseInt(localStorage.nbluden)>0){
 	luden=luden+ludenSave;
 }
 
+var assassin=0;
+var assassinSave=parseInt(localStorage.nbassassin);
+if(parseInt(localStorage.nbassassin)>0){
+	assassin=assassin+assassinSave;
+}
+
+var darkin=0;
+var darkinSave=parseInt(localStorage.nbdarkin);
+if(parseInt(localStorage.nbdarkin)>0){
+	darkin=darkin+darkinSave;
+}
+
 var stackLuden=0;
 var stackLudenSave=parseInt(localStorage.nbstackluden);
 if(parseInt(localStorage.nbstackluden)>0){
@@ -261,6 +281,7 @@ $(document).ready(function(){
 		maokai=0;
 		aphelios=0;
 		viktor=0;
+		kayn=0;
 		jhin=0;
 
 
@@ -283,6 +304,8 @@ $(document).ready(function(){
 		hexcore=0;
 		statikk=0;
 		luden=0;
+		assassin=0;
+		darkin=0;
 		tear=0;
 		manamune=0;
 		muramana=0;
@@ -304,6 +327,7 @@ $(document).ready(function(){
 		localStorage.setItem("nbmaokai", maokai);
 		localStorage.setItem("nbaphelios", aphelios);
 		localStorage.setItem("nbviktor", viktor);
+		localStorage.setItem("nbkayn", kayn);
 		localStorage.setItem("nbjhin", jhin);
 
 
@@ -326,6 +350,8 @@ $(document).ready(function(){
 		localStorage.setItem("nbhexcore", hexcore);
 		localStorage.setItem("nbstatikk", statikk);
 		localStorage.setItem("nbluden", luden);
+		localStorage.setItem("nbassassin", assassin);
+		localStorage.setItem("nbdarkin", darkin);
 		localStorage.setItem("nbtear", tear);
 		localStorage.setItem("nbmanamune", manamune);
 		localStorage.setItem("nbmuramana", muramana);
@@ -721,7 +747,40 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#nbKayn").val(kayn+" kayn");
+	$("#kaynB").click(function(){
+		if(shroom>=prixKayn){
+			if(kayn==0 && assassin<1 && darkin<1){
+				var sonBouton=new Audio("Son/kayn.mp3");
+				sonBouton.volume=0.02;
+				sonBouton.play();
+			}
+			else{
+				var alea=Math.random();
+				if(alea<0.5){
+					var sonBouton=new Audio("Son/boutons.wav");
+					sonBouton.volume=0.005;
+					sonBouton.play();
+				}
+				else{
+					var sonBouton=new Audio("Son/boutons2.wav");
+					sonBouton.volume=0.005;
+					sonBouton.play();
+				}
+			}
 
+
+			kayn=kayn+1;
+			shroom=shroom-prixKayn;
+
+			$("#Assassin").show();
+			$("#Darkin").show();
+
+			
+			
+
+		}
+	});
 
 	$("#senna").hide();
 
@@ -1132,6 +1191,41 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#Assassin").hide();
+	$("#achatAssassin").val(assassin+"/1");
+
+	$("#AssassinB").click(function(){
+		if(assassin<1){
+			if(kayn>=10){
+				var sonBouton=new Audio("Son/assassin.mp3");
+				sonBouton.volume=0.02;
+				sonBouton.play();
+				assassin=assassin+1;
+				kayn=kayn-10;
+				$("#achatAssassin").val(assassin+"/1");	
+				
+			}
+		}
+	});
+
+	$("#Darkin").hide();
+	$("#achatDarkin").val(darkin+"/1");
+
+	$("#DarkinB").click(function(){
+		if(darkin<1){
+			if(kayn>=10){
+				var sonBouton=new Audio("Son/darkin.mp3");
+				sonBouton.volume=0.02;
+				sonBouton.play();
+				darkin=darkin+1;
+				kayn=kayn-10;
+				$("#achatDarkin").val(darkin+"/1");	
+				
+			}
+		}
+	});
+
+
 	$("#achatTear").val(tear+"/1");
 
 	$("#TearB").click(function(){
@@ -1159,7 +1253,7 @@ $(document).ready(function(){
 /******************************/
 
 setInterval(function(){    
-	ShroomParSec=teemo*effetTeemo+ivern*10+velkoz*3.14+nidalee*27+thresh*58+senna*3000+maokai*(100+(10*arbrisseau))+jhin*4444+aphelios*200+viktor*effetViktor;  //a modifier a chaque champions créés
+	ShroomParSec=teemo*effetTeemo+ivern*10+velkoz*3.14+nidalee*27+thresh*58+senna*3000+maokai*(100+(10*arbrisseau))+jhin*4444+aphelios*200+viktor*effetViktor+kayn*effetKayn;  //a modifier a chaque champions créés
 	ShroomParSec=ShroomParSec+(ShroomParSec*runaanSec)+guinsoo*(effetGuinsoo*1.5)+mejai*(0.1*stackMejai); // a modifier a chaque items créés
 	ShroomParClic=1+pink*0.75+oracle*2+((dague*0.5)+runaanClick)+manamune*5+((shroom*0.001)*muramana)+guinsoo*(effetGuinsoo*3); //a modifier a chaque items / champions créés
 	ShroomParClic=ShroomParClic+(ShroomParClic*(0.03*calibrum))+(ShroomParClic*(0.03*severum))+(ShroomParClic*(0.03*gravitum))+(ShroomParClic*(0.03*infernum))+(ShroomParClic*(0.03*crescendum))
@@ -1174,6 +1268,7 @@ setInterval(function(){
 	localStorage.setItem("nbmaokai", maokai);
 	localStorage.setItem("nbaphelios", aphelios);
 	localStorage.setItem("nbviktor", viktor);
+	localStorage.setItem("nbkayn", kayn);
 	localStorage.setItem("nbjhin", jhin);
 
 	/*ITEMS*/
@@ -1195,6 +1290,8 @@ setInterval(function(){
 	localStorage.setItem("nbstatikk", statikk);
 	localStorage.setItem("nbhexcore", hexcore);
 	localStorage.setItem("nbluden", luden);
+	localStorage.setItem("nbassassin", assassin);
+	localStorage.setItem("nbdarkin", darkin);
 	localStorage.setItem("nbtear", tear);
 	localStorage.setItem("nbmanamune", manamune);
 	localStorage.setItem("nbmuramana", muramana);
@@ -1308,6 +1405,55 @@ setInterval(function(){
 		$("#effViktor").val("445 Shrooms/s");
 	}
 	
+	if(kayn>0 || assassin==1 || darkin==1){
+		$("#Assassin").show();
+		$("#Darkin").show();
+	}
+
+
+	if(assassin==1){
+		effetKayn=1400;
+		$("#effKayn").val("1 400 Shrooms/s");
+		$("#nbKayn").css("color", "#271ee8");
+		$("#prixKayn").css("color", "#271ee8");
+		$("#effKayn").css("color", "#271ee8");
+		$("#kaynB").css("background-image", "url(./images/assassinKayn.jpg)");
+		$("#kaynB").css("background-position", "top");
+		$("#DarkinB").css("background-image", "url(./images/darkin2.jpg)");
+		$("#AssassinB").attr("disabled", true);
+		$("#DarkinB").attr("disabled", true);
+		$("#achatDarkin").val(darkin+"/0");
+	}
+	else if(darkin==1){
+		prixKayn=725000;
+		$("#prixKayn").val("prix: 725 000 Shrooms");
+		$("#nbKayn").css("color", "#eb2c2c");
+		$("#prixKayn").css("color", "#eb2c2c");
+		$("#effKayn").css("color", "#eb2c2c");
+		$("#kaynB").css("background-position", "top");
+		$("#kaynB").css("background-image", "url(./images/rhaast.jpg)");
+		$("#AssassinB").css("background-image", "url(./images/assassin2.jpg)");
+		$("#AssassinB").attr("disabled", true);
+		$("#DarkinB").attr("disabled", true);
+		$("#achatAssassin").val(assassin+"/0");
+	}
+	else{
+		effetKayn=1200;
+		prixKayn=900000;
+		$("#nbKayn").css("color", "#2f4f4f");
+		$("#prixKayn").css("color", "#2f4f4f");
+		$("#effKayn").css("color", "#2f4f4f");
+		$("#kaynB").css("background-image", "url(./images/kayn.jpg)");
+		$("#AssassinB").attr("disabled", false);
+		$("#DarkinB").attr("disabled", false);
+	}
+
+	if(darkin==0){
+		$("#nbKayn").val(kayn+" kayn");
+	}
+	else{
+		$("#nbKayn").val(kayn+" rhaast");
+	}
 	/*LIMITES D'ITEMS*/
 
 
