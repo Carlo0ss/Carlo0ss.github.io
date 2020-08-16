@@ -1528,7 +1528,7 @@ setInterval(function(){
 	if(mejai==1 && stackMejai>=2000){
 		$("#MejaiB").css("background-image", "url(./images/mejai2.png)");
 		$("#MejaiB").attr("disabled", true);
-		
+		$("#stackMejai").val(stackMejai+"/2000");
 	}
 
 	if(statikk==1){
