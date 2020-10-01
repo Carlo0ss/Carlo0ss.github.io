@@ -838,7 +838,68 @@ body{
 	border:none;
 }
 
+/******************************/
+/*TOUT CE QUI CONCERNE gnar*/
+/******************************/
 
+#gnar{
+	width:595px;
+	height:150px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#gnarB{
+	width:850px;
+	height:150px;
+	background-image:url("images/gnar.jpg");
+	background-size:100%;
+	background-position:center;
+	text-align:left top;
+}
+
+#infoGnar{
+	display: flex;
+	flex-direction: column;
+	border-bottom:5px solid black;
+}
+
+#nbGnar{
+	background : none;
+	width:200px;
+	height:200%;
+	border:none;
+	text-transform : uppercase;
+	color : #ff8c00 ;
+	font : 20px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+}
+
+#prixGnar{
+	background : none;
+	width:185px;
+	height:100%;
+	text-transform : uppercase;
+	color : #ff8c00 ;
+	font : 100% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effGnar{
+	background : none;
+	width:200px;
+	height:100%;
+	text-transform : uppercase;
+	color : #ff8c00 ;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
 
 /******************************/
 /*TOUT CE QUI CONCERNE les items*/
@@ -2622,6 +2683,101 @@ body{
 	background : none;
 	text-transform : uppercase;
 	color : #261ce4;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	border:none;
+}
+
+/******************************/
+/*TOUT CE QUI CONCERNE le megagnar*/
+/******************************/
+
+#Megagnar{
+	width:695px;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	border:3px solid black;
+
+}
+
+#MegagnarB{
+	background-image:url("images/megagnar.jpg");
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+
+
+
+#infoMegagnar{
+	display: flex;
+	flex-direction: column;
+	padding-top:5px;
+	width:337px;
+}
+
+#nomMegagnar{
+	background : none;
+	width:200px;
+	text-transform : uppercase;
+	margin-left:50px;
+	color : #a42916;
+	font : 140% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#prixMegagnar{
+	background : none;
+	width:320px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #a42916;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+
+#effMegagnar{
+	background : none;
+	width:320px;
+	text-transform : uppercase;
+	margin-left:0px;
+	color : #a42916;
+	font : 16px impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : center;
+	border:none;
+}
+#etatMegagnar{
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+
+#achatMegagnar{
+	background : none;
+	width:100px;
+	margin-left:0px;
+	margin-top:20px;
+	text-transform : uppercase;
+	color : #a42916;
+	font : 120% impact, futura, sans-serif;
+	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+	text-align : left;
+	border:none;
+	margin-bottom:10px;
+}
+
+#stackMegagnar{
+	background : none;
+	width:100px;
+	text-transform : uppercase;
+	color : #a42916;
 	font : 120% impact, futura, sans-serif;
 	text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
 	border:none;

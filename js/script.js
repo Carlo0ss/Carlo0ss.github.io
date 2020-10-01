@@ -92,6 +92,22 @@ if(parseInt(localStorage.nbjhin)>0){
 	jhin=jhin+jhinSave;
 }
 
+var gnar=0;
+var stackMegagnar=0;
+var effetGnar=5500;
+var compteurMegagnar=0;
+var gnarSave=parseInt(localStorage.nbgnar);
+if(parseInt(localStorage.nbgnar)>0){
+	gnar=gnar+gnarSave;
+}
+var stackMegagnarSave=parseInt(localStorage.nbstackmegagnar);
+if(parseInt(localStorage.nbstackmegagnar)>0){
+	stackMegagnar=stackMegagnar+stackMegagnarSave;
+}
+var compteurMegagnarSave=parseInt(localStorage.nbcompteurmegagnar);
+if(parseInt(localStorage.nbcompteurmegagnar)>0){
+	compteurMegagnar=compteurMegagnar+compteurMegagnarSave;
+}
 
 /*INITIALISATION DES ITEMS*/
 var cull=0;
@@ -217,6 +233,11 @@ var ludenSave=parseInt(localStorage.nbluden);
 if(parseInt(localStorage.nbluden)>0){
 	luden=luden+ludenSave;
 }
+var stackLuden=0;
+var stackLudenSave=parseInt(localStorage.nbstackluden);
+if(parseInt(localStorage.nbstackluden)>0){
+	stackLuden=stackLuden+stackLudenSave;
+}
 
 var assassin=0;
 var assassinSave=parseInt(localStorage.nbassassin);
@@ -230,11 +251,7 @@ if(parseInt(localStorage.nbdarkin)>0){
 	darkin=darkin+darkinSave;
 }
 
-var stackLuden=0;
-var stackLudenSave=parseInt(localStorage.nbstackluden);
-if(parseInt(localStorage.nbstackluden)>0){
-	stackLuden=stackLuden+stackLudenSave;
-}
+
 
 
 var tear=0;
@@ -266,6 +283,7 @@ if(parseInt(localStorage.nbmuramana)>0){
 }
 
 
+
 $(document).ready(function(){
 	/*****RESET********/
 
@@ -283,7 +301,9 @@ $(document).ready(function(){
 		viktor=0;
 		kayn=0;
 		jhin=0;
-
+		gnar=0;
+		stackMegagnar=0;
+		compteurMegagnar=0;
 
 		cull=0;
 		pink=0;
@@ -329,8 +349,9 @@ $(document).ready(function(){
 		localStorage.setItem("nbviktor", viktor);
 		localStorage.setItem("nbkayn", kayn);
 		localStorage.setItem("nbjhin", jhin);
-
-
+		localStorage.setItem("nbgnar", gnar);
+		localStorage.setItem("nbstackmegagnar", stackMegagnar);
+		localStorage.setItem("nbcompteurmegagnar", compteurMegagnar);
 
 		localStorage.setItem("nbcull", cull);
 		localStorage.setItem("nbpink", pink);
@@ -840,6 +861,37 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#nbGnar").val(gnar+" gnar");
+	$("#gnarB").click(function(){
+		if(shroom>=5100000){
+			if(gnar==0){
+				var sonBouton=new Audio("Son/gnar.mp3");
+				sonBouton.volume=0.02;
+				sonBouton.play();
+			}
+			else{
+				var alea=Math.random();
+				if(alea<0.5){
+					var sonBouton=new Audio("Son/boutons.wav");
+					sonBouton.volume=0.005;
+					sonBouton.play();
+				}
+				else{
+					var sonBouton=new Audio("Son/boutons2.wav");
+					sonBouton.volume=0.005;
+					sonBouton.play();
+				}
+			}
+
+
+			gnar=gnar+1;
+			shroom=shroom-5100000;
+
+			$("#nbGnar").val(gnar+" gnar");
+
+		}
+	});
+
 /******************************/
 	/*GESTIONS DES ITEMS*/
 /******************************/
@@ -1245,6 +1297,13 @@ $(document).ready(function(){
 
 	$("#Manamune").hide();
 	$("#Muramana").hide();
+
+
+
+	$("#Megagnar").hide();
+	
+
+	
 });
 
 
@@ -1253,7 +1312,7 @@ $(document).ready(function(){
 /******************************/
 
 setInterval(function(){    
-	ShroomParSec=teemo*effetTeemo+ivern*10+velkoz*3.14+nidalee*27+thresh*58+senna*3000+maokai*(100+(10*arbrisseau))+jhin*4444+aphelios*200+viktor*effetViktor+kayn*effetKayn;  //a modifier a chaque champions créés
+	ShroomParSec=teemo*effetTeemo+ivern*10+velkoz*3.14+nidalee*27+thresh*58+senna*3000+maokai*(100+(10*arbrisseau))+jhin*4444+aphelios*200+viktor*effetViktor+kayn*effetKayn+gnar*effetGnar;  //a modifier a chaque champions créés
 	ShroomParSec=ShroomParSec+(ShroomParSec*runaanSec)+guinsoo*(effetGuinsoo*1.5)+mejai*(0.1*stackMejai); // a modifier a chaque items créés
 	ShroomParClic=1+pink*0.75+oracle*2+((dague*0.5)+runaanClick)+manamune*5+((shroom*0.001)*muramana)+guinsoo*(effetGuinsoo*3); //a modifier a chaque items / champions créés
 	ShroomParClic=ShroomParClic+(ShroomParClic*(0.03*calibrum))+(ShroomParClic*(0.03*severum))+(ShroomParClic*(0.03*gravitum))+(ShroomParClic*(0.03*infernum))+(ShroomParClic*(0.03*crescendum))
@@ -1270,7 +1329,10 @@ setInterval(function(){
 	localStorage.setItem("nbviktor", viktor);
 	localStorage.setItem("nbkayn", kayn);
 	localStorage.setItem("nbjhin", jhin);
-
+	localStorage.setItem("nbgnar", gnar);
+	localStorage.setItem("nbstackmegagnar", stackMegagnar);
+	localStorage.setItem("nbcompteurmegagnar", compteurMegagnar);
+	
 	/*ITEMS*/
 	localStorage.setItem("nbcull", cull);
 	localStorage.setItem("nbpink", pink);
@@ -1454,6 +1516,26 @@ setInterval(function(){
 	else{
 		$("#nbKayn").val(kayn+" rhaast");
 	}
+
+	if(gnar>=1){
+		$("#Megagnar").show();
+		$("#stackMegagnar").val(stackMegagnar+"/300");
+	}
+	
+	if(gnar>=1 && stackMegagnar>=300 && compteurMegagnar<=60){
+		effetGnar=6500;
+		$("#gnarB").css("background-image", "url(./images/megagnar.PNG)");
+		$("#effGnar").val("6 500 Shrooms/s");
+	}
+	if(compteurMegagnar>60){
+		effetGnar=5500;
+		$("#gnarB").css("background-image", "url(./images/gnar.jpg)");
+		$("#effGnar").val("5 500 Shrooms/s");
+		stackMegagnar=0;
+		compteurMegagnar=0;
+	}
+
+	
 	/*LIMITES D'ITEMS*/
 
 
@@ -1686,6 +1768,16 @@ setInterval(function(){
 	if(luden==1){
 		stackLuden=stackLuden+1;
 	}
-	
+	if(gnar>=1 && stackMegagnar<=300){
+		stackMegagnar=stackMegagnar+1;
+	}
+	if(compteurMegagnar<=60 && stackMegagnar>300){
+		compteurMegagnar=compteurMegagnar+1;
+	}
+	if(stackMegagnar==300){
+		var sonBouton=new Audio("https://vignette.wikia.nocookie.net/leagueoflegends/images/0/06/Gnar.transform01.ogg/revision/latest?cb=20150628195400");
+		sonBouton.volume=0.02;
+		sonBouton.play();
+	}
 
 }, 1000);
